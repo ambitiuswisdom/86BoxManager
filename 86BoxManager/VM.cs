@@ -16,7 +16,8 @@ namespace _86boxManager
         public const int STATUS_WAITING = 2; //VM is waiting for user response
         public const int STATUS_PAUSED = 3; //VM is paused
 
-        public VM(){
+        public VM()
+        {
             Name = "defaultName";
             Desc = "defaultDesc";
             Path = "defaultPath";

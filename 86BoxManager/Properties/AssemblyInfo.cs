@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("86Box Manager")]
 [assembly: AssemblyDescription("A configuration manager for 86Box emulator")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("David Simunič and others")]
+[assembly: AssemblyCompany("RuoNan")]
 [assembly: AssemblyProduct("86Box Manager")]
-[assembly: AssemblyCopyright("Copyright © 2018-2023 David Simunič and others")]
+[assembly: AssemblyCopyright("Copyright © 2024-2024 RuoNan")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

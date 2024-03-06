@@ -23,9 +23,9 @@ namespace _86boxManager
 
             lblVersion1.Text = Application.ProductVersion.Substring(0, Application.ProductVersion.Length - 2);
 
-            #if DEBUG
+#if DEBUG
                 lblVersion1.Text += " (Debug)";
-            #endif
+#endif
         }
 
         private void dlgSettings_FormClosing(object sender, FormClosingEventArgs e)
@@ -106,13 +106,13 @@ namespace _86boxManager
                     lbl86BoxVer1.ForeColor = Color.Red;
                 }
             }
-            catch(FileNotFoundException ex)
+            catch (FileNotFoundException ex)
             {
                 lbl86BoxVer1.Text = "86Box.exe not found";
                 lbl86BoxVer1.ForeColor = Color.Gray;
             }
         }
-        
+
         //TODO: Rewrite
         //Save the settings to the registry
         private bool SaveSettings()
@@ -246,7 +246,7 @@ namespace _86boxManager
 
             if (dialog.Show(Handle))
             {
-                txtEXEdir.Text  = dialog.FileName;
+                txtEXEdir.Text = dialog.FileName;
                 if (!txtEXEdir.Text.EndsWith(@"\")) //Just in case
                 {
                     txtEXEdir.Text += @"\";
@@ -322,7 +322,7 @@ namespace _86boxManager
                     cbxMinimize.Checked != Convert.ToBoolean(regkey.GetValue("MinimizeOnVMStart")) ||
                     cbxShowConsole.Checked != Convert.ToBoolean(regkey.GetValue("ShowConsole")) ||
                     cbxMinimizeTray.Checked != Convert.ToBoolean(regkey.GetValue("MinimizeToTray")) ||
-                    cbxCloseTray.Checked != Convert.ToBoolean(regkey.GetValue("CloseToTray")) || 
+                    cbxCloseTray.Checked != Convert.ToBoolean(regkey.GetValue("CloseToTray")) ||
                     cbxLogging.Checked != Convert.ToBoolean(regkey.GetValue("EnableLogging")) ||
                     cbxGrid.Checked != Convert.ToBoolean(regkey.GetValue("EnableGridLines")));
 

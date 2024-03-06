@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace _86boxManager
 {
-    class ListViewItemComparer: IComparer
+    class ListViewItemComparer : IComparer
     {
         private int col;
         private SortOrder order;
